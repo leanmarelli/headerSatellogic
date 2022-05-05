@@ -1,0 +1,63 @@
+*{
+  font-family: 'Poppins', sans-serif;
+}
+.cols1{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 3rem !important;
+}
+
+.cols2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cols3{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end !important;
+  padding-right: 3rem !important;
+}
+
+.link{
+  margin-right: 1rem;
+}
+
+a{
+  background: 
+    linear-gradient(to right, rgb(0, 0, 0), rgb(255, 255, 255)),
+    linear-gradient(to right, rgb(255, 255, 255), rgb(129, 129, 129), rgb(0, 0, 0));
+  background-size: 100% 0.1em, 0 0.1em;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+
+a:hover,
+a:focus {
+  background-size: 0 0.1em, 100% 0.1em;
+}
+
+.modo:first-letter{
+  text-transform: uppercase;
+}
+
+.modo{
+  width: max-content !important;
+}
+
+.Box_content {
+  display: flex;
+  flex-direction: column;
+  background-color: red;
+}
+
+@media only screen and (max-width: 768px) {
+  .Box {
+    display: flex !important;
+    flex-direction: column !important;
+
+  }
+}
